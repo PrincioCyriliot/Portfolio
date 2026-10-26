@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Princio Cyriliot</title>
+    <style>
+        /* Amélioration spécifique du design de la section contact */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: start;
+        }
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            color: white;
+        }
+        .contact-info-card h3 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        .contact-info-card p {
+            font-size: 15px;
+            color: #aaa;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 15px;
+            color: #ddd;
+        }
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .social-btn {
+            padding: 10px 20px;
+            background: #1a1a1a;
+            color: white;
+            border: 1px solid #333;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+        .social-btn:hover {
+            background: orangered;
+            border-color: orangered;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="portfolio.html" class="logo"><span>Princio</span>Cyriliot</a>
+        <nav class="navbar">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="service.html">Services</a>
+            <a href="experience.html">Expérience</a>
+            <a href="projet.html">Projets</a>
+            <a href="education.html">Éducation</a>
+            <a href="cv.html">Mon CV</a>
+        </nav>
+        <a href="contact.html" class="contact active">Contactez-moi</a>
+    </header>
+
+    <section class="container" style="padding-top: 140px;">
+        <h2 class="sub-title">Contactez-<span>moi</span></h2>
+        
+        <div class="contact-wrapper">
+            <!-- Colonne Informations & Réseaux -->
+            <div class="contact-info-card">
+                <h3>Bienvenu :)</h3>
+                <p>
+                    Actuellement en recherche d'opportunités (stage en ingénierie logicielle ou réseaux) ou pour toute collaboration technique, n'hésitez pas à m'envoyer un message. Je vous répondrai dans les plus brefs délais.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span>📍</span> Antananarivo, Madagascar
+                    </div>
+                    <div class="contact-item">
+                        <span>📧</span> prafalimaeva@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span> +261 38 40 086 72
+                    </div>
+                </div>
+
+                <div style="font-weight: 600; margin-bottom: 0.5rem; color: white;">Retrouvez-moi sur :</div>
+                <div class="social-links">
+                    <a href="https://github.com/PrincioCyriliot" target="_blank" class="social-btn">GitHub</a>
+                    <a href="https://linkedin.com/in/princio-rafalimaeva-674846414" target="_blank" class="social-btn">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Colonne Formulaire -->
+            <div class="glass-card" style="padding: 2.5rem;">
+                <form action="#" method="POST">
+                    <div style="margin-bottom: 1.5rem;">
+                        <input type="text" placeholder="Votre Nom Complet" required style="width: 100%; padding: 1.2rem; font-size: 16px; color: white; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <input type="email" placeholder="Votre Adresse Email" required style="width: 100%; padding: 1.2rem; font-size: 16px; color: white; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <textarea rows="5" placeholder="Votre Message..." required style="width: 100%; padding: 1.2rem; font-size: 16px; color: white; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-2" style="width: 100%; text-align: center;">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

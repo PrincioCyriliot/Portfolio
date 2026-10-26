@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.801);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: rgb(114, 219, 15);
+    text-shadow: 0 0 25px rgb(159, 233, 22),
+        0 0 50px rgb(98, 226, 13),
+        0 0 70px rgb(133, 233, 18);
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(103, 235, 15);
+    border-bottom: 3px solid rgb(131, 236, 10);
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.288);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.img-box img {
+    border-radius: 50%;
+    padding: auto;
+    width: 400px;
+    top: 45px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(12, 11, 11, 0.651);
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(10, 10, 10);
+}
+
+.about-img img {
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px rgb(20, 149, 167),
+        0 0 50px rgb(22, 201, 192);
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgba(255, 255, 255, 0.212);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.services p {
+    max-width: 800px 800px;
+}
+
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 70px;
+    justify-content: center;
+    text-align: center;
+}
+
+.services h2 {
+    color: black;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span {
+    padding: 10px;
+}
+
+.read {
+    background: rgba(10, 9, 9);
+    font-weight: 600;
+    padding: 15px 20px;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.read:hover {
+    background: white;
+    color: rgb(11, 11, 11);
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 90px;
+    background: rgba(52, 95, 134, 0.74);
+}
+
+p {
+font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+/* Section de contenu générique */
+.container {
+    padding: 120px 12% 60px; /* Espace pour le header fixe */
+    min-height: 100vh;
+    background: #0f0f0f;
+    color: white;
+}
+
+.grid-services, .grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: 0.4s;
+}
+
+.card:hover {
+    border-color: orangered;
+    transform: translateY(-10px);
+}
+
+.card i { font-size: 40px; color: rgb(114, 219, 15); margin-bottom: 1rem; }
+
+/* --- NOUVELLES PROPRIÉTÉS POUR PAGES SECONDAIRES --- */
+
+/* Conteneur de section pour pages internes */
+.container {
+    padding: 120px 10% 50px;
+    min-height: 100vh;
+}
+
+/* Grille pour les cartes (Services / Projets) */
+.glass-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+/* Carte Style Glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid rgb(114, 219, 15);
+    background: rgba(114, 219, 15, 0.05);
+}
+
+.glass-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Timeline pour Education / Experience */
+.edu-item {
+    border-left: 2px solid orangered;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.edu-item h4 {
+    color: rgb(114, 219, 15);
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .glass-grid { grid-template-columns: 1fr; }
+    .header { padding: 20px 5%; }
+}
